@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(42, 43, 44);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(87, 33, 104);
+  padding: 20px;
+  border-radius: 10px;
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  box-shadow: 8px 8px 1rem rgba(137, 57, 168, 0.15),
+    -8px -8px 1rem rgba(137, 57, 168, 0.15);
+}
+
+.container h1 {
+  font-size: 35px;
+}
+
+.calificación {
+  display: flex;
+  padding: 15px 0;
+}
+
+.emoji {
+  margin: 10px 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.emoji:hover,
+.emoji.active {
+  background-color: rgb(123, 70, 139);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 250ms ease;
+}
+
+.calificación img {
+  width: 40px;
+}
+
+small {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.send-btn {
+  background-color: rgb(135, 54, 160);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  background-color: rgb(146, 72, 170);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 250ms ease;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.opinión {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.agradecimiento {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .calificación {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .calificación img {
+    width: 30px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 9px;
+  }
+
+  .emoji {
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .send-btn {
+    padding: 10px 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 2rem;
+  }
+
+  .opinión {
+    text-align: center;
+  }
+
+  .agradecimiento {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .container {
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .calificación {
+    text-align: center;
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .send-btn {
+    padding: 10px 20px;
+  }
+}
